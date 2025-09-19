@@ -4,7 +4,7 @@
 
 - **Nama**             : Revalina Adelia
 - **NPM**              : 4523210091
-- **Mata Kuliah**      : Praktikum Berbasis Web (A)
+- **Mata Kuliah**      : Pemrograman Berbasis Web (A)
 - **Dosen Pengampu**   : Adi Wahyu Pribadi, S.Si., M.Kom.
 
 ## A. Bagian 1: Instalasi & Konfigurasi Awal Git dengan Windows

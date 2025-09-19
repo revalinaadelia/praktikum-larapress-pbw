@@ -92,7 +92,7 @@
 
    <img width="1085" height="155" alt="Membuat Beberapa File" src="https://github.com/user-attachments/assets/a31a2591-cc40-447c-9690-0dc6cf34b644" />
 
-   Setelah perintah dijalankan, folder proyek akan berisi satu file HTML (index.html) dan satu folder CSS (css) dengan file style.css di dalamnya.
+   Setelah perintah dijalankan, folder proyek akan berisi dua file HTML (index.html dan kontak.html) dan satu folder CSS (css) dengan file style.css di dalamnya.
 
 4. Mengecek Status dan Masuk ke Staging Area
 
@@ -168,7 +168,7 @@
  
    1) Jalankan perintah berikut untuk menambahkan repository GitHub sebagai remote. Salin link repository GitHub.
     
-      git remote add origin https://github.com/NamaUserKamu/proyek-web-pertama.git
+      git remote add origin https://github.com/revalinaadelia/tugas-proyek-web-pertama.git
       
    3) Atur nama branch utama menjadi main:
 

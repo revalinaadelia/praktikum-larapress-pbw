@@ -1,4 +1,4 @@
-<img width="886" height="321" alt="image" src="https://github.com/user-attachments/assets/53762590-28b3-4002-8ce1-1371d01c3de2" />#TUGAS PRAKTIKUM PERTAMA: INSTALASI GIT DAN INTEGRASI GITHUB
+#TUGAS PRAKTIKUM PERTAMA: INSTALASI GIT DAN INTEGRASI GITHUB
 
 ## 📃 Identitas Diri
 

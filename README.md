@@ -1,4 +1,4 @@
-#TUGAS PRAKTIKUM PERTAMA: INSTALASI GIT DAN INTEGRASI GITHUB
+# TUGAS PRAKTIKUM PERTAMA: INSTALASI GIT DAN INTEGRASI GITHUB
 
 ## 📃 Identitas Diri
 
@@ -58,11 +58,11 @@
 ## B. Bagian 2: Alur Kerja Dasar Git (Lokal)
 
 1. Membuat Proyek Baru dan Inisialisasi Git
-   a. Buka File Explorer, kemudian buat folder baru dengan nama “tugas-proyek-web”. Pada contoh ini, folder dibuat dalam direktori Documents.
+   1) Buka File Explorer, kemudian buat folder baru dengan nama “tugas-proyek-web”. Pada contoh ini, folder dibuat dalam direktori Documents.
 
       <img width="519" height="38" alt="Membuat Folder tugas-proyek-web" src="https://github.com/user-attachments/assets/7c0498b3-c39b-4992-b05d-4f488244b709" />
 
-   b. Setelah folder dibuat, buka Command Prompt dan jalankan perintah berikut secara satu persatu.
+   2) Setelah folder dibuat, buka Command Prompt dan jalankan perintah berikut secara satu persatu.
       mkdir proyek-web
       cd proyek-web
       git init
@@ -81,51 +81,51 @@
 
 3. Mengecek Status dan Masuk ke Staging Area
    Setelah file proyek dibuat, kita perlu menyimpannya ke dalam version control Git. Proses ini dilakukan melalui dua tahap, yaitu pengecekan status dan menambahkan file ke staging area.
-   a. Cek status repository dengan perintah di bawah ini. Perintah ini akan menampilkan file apa saja yang belum dicatat oleh Git.
+   1) Cek status repository dengan perintah di bawah ini. Perintah ini akan menampilkan file apa saja yang belum dicatat oleh Git.
       git status
 
       <img width="580" height="248" alt="Mengecek Status Repository" src="https://github.com/user-attachments/assets/eaa1fae9-86f4-4074-8206-632095c56545" />
 
-   b. Tambahkan semua file ke staging area menggunakan perintah berikut ini. Titik (.) berarti semua file di dalam folder tersebut akan dimasukkan ke staging area.
+   2) Tambahkan semua file ke staging area menggunakan perintah berikut ini. Titik (.) berarti semua file di dalam folder tersebut akan dimasukkan ke staging area.
       git add .
 
       <img width="513" height="42" alt="Menambahkan Semua File ke Staging Area" src="https://github.com/user-attachments/assets/6867226f-99a0-4ac1-9864-0db4351f9f82" />
 
-5. Menyimpan Perubahan (Commit)
+4. Menyimpan Perubahan (Commit)
    Simpan perubahan tersebut dengan commit. Teks di dalam tanda kutip merupakan pesan commit, yang menjelaskan perubahan yang dilakukan. 
    git commit -m “feat: Inisialisasi proyek dengan file index dan css”
 
   <img width="1226" height="123" alt="Menyimpan Perubahan (Commit)" src="https://github.com/user-attachments/assets/4b8024a6-8802-4a80-8eaa-df67d3ae760e" />
 
-6. Membuat Branch dan File Baru di Branch
-   a. Buat branch baru dengan nama fitur-kontak: 
+5. Membuat Branch dan File Baru di Branch
+   1) Buat branch baru dengan nama fitur-kontak: 
       git checkout -b fitur-kontak
 
       <img width="751" height="61" alt="Buat Branch fitur-kontak" src="https://github.com/user-attachments/assets/b6ee52e3-692d-4c76-a585-19c2945f54c9" />
 
-   b. Tambahkan file baru bernama kontak.html dengan perintah: 
+   2) Tambahkan file baru bernama kontak.html dengan perintah: 
       echo “<h1>Halaman Kontak</h1>” > kontak.html
 
       <img width="932" height="37" alt="File kontak html" src="https://github.com/user-attachments/assets/d0357c9d-0416-4c57-826f-6f87ff5d1fc2" />
 
-   c. Untuk membuka proyek di Visual Studio Code, jalankan code . Visual Studio Code akan menampilkan proyek beserta semua file (index.html, style.css, dan kontak.html).
+   3) Untuk membuka proyek di Visual Studio Code, jalankan code . Visual Studio Code akan menampilkan proyek beserta semua file (index.html, style.css, dan kontak.html).
 
       <img width="479" height="42" alt="Melihat Visual Studio Code" src="https://github.com/user-attachments/assets/55a9f9d5-6959-42ae-801e-c93a1dab0d8c" />
 
-8. Melakukan Staging dan Commit di Branch
+6. Melakukan Staging dan Commit di Branch
    Tambahkan file baru ke staging area dan simpan dengan commit:
    git add .
    git commit -m “feat: Menambahkan halaman kontak”
 
   <img width="998" height="151" alt="Melakukan Staging dan Commit di Branch" src="https://github.com/user-attachments/assets/7012e329-0747-4147-aa58-9409f41780cd" />
 
-9. Menggabungkan Branch (Merge)
-   a. Pindah ke branch utama. Jika branch main belum dibuat, gunakan master:
+7. Menggabungkan Branch (Merge)
+   1) Pindah ke branch utama. Jika branch main belum dibuat, gunakan master:
       git checkout master
 
       <img width="653" height="64" alt="Merge Master" src="https://github.com/user-attachments/assets/b9b7b923-72ec-47a0-8fac-ce43afd3015c" />
 
-   b. Lakukan merge branch fitur-kontak ke branch utama:
+   2) Lakukan merge branch fitur-kontak ke branch utama:
       git merge fitur-kontak
 
       <img width="687" height="156" alt="Merge Branch fitur-kontak" src="https://github.com/user-attachments/assets/f56c649e-f127-4ab9-b24a-cb62dfb2e4fc" />
@@ -134,13 +134,13 @@
 
 1. Membuat Repository di GitHub
 2. Menghubungkan Repository Lokal dengan GitHub
-   a. Jalankan perintah berikut untuk menambahkan repository GitHub sebagai remote. Salin link repository GitHub.
+   1) Jalankan perintah berikut untuk menambahkan repository GitHub sebagai remote. Salin link repository GitHub.
       git remote add origin https://github.com/NamaUserKamu/proyek-web-pertama.git
-   b. Atur nama branch utama menjadi main:
+   2) Atur nama branch utama menjadi main:
       git branch -M main
-   c. Unggah proyek ke GitHub dengan perintah:
+   3) Unggah proyek ke GitHub dengan perintah:
       git push -u origin main
-   d. Setelah itu refresh GitHub, maka file yang sudah dibuat akan muncul di dalam repository GitHub yang sudah dibuat.
+   4) Setelah itu refresh GitHub, maka file yang sudah dibuat akan muncul di dalam repository GitHub yang sudah dibuat.
    Setelah perintah terakhir dijalankan, repository lokal akan terhubung dengan repository GitHub, dan seluruh file proyek akan tersedia secara online.
    
    <img width="1420" height="359" alt="Menghubungkan Repositori Lokal dengan GitHub" src="https://github.com/user-attachments/assets/e7c072bb-b29e-4f86-b7c1-2ffc397e0797" />

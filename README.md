@@ -274,10 +274,10 @@
 
 10.	Sinkronisasi ulang Repositori Lokal
 
-  	Setelah pull request berhasil di-merge, sinkronkan kembali branch utama (main) di laptop lokal agar selalu sesuai dengan repositori GitHub.
+  	   Setelah pull request berhasil di-merge, sinkronkan kembali branch utama (main) di laptop lokal agar selalu sesuai dengan repositori GitHub.
 
-  	git checkout main
+      git checkout main
 
-  	git pull origin main
+      git pull origin main
 
-   <img width="832" height="384" alt="Sinkronisasi Ulang setelah Merge" src="https://github.com/user-attachments/assets/0c404d2c-8cef-4bac-a0a0-2403562053f6" />
+      <img width="832" height="384" alt="Sinkronisasi Ulang setelah Merge" src="https://github.com/user-attachments/assets/0c404d2c-8cef-4bac-a0a0-2403562053f6" />

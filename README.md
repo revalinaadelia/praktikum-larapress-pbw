@@ -164,6 +164,22 @@
 
 1. Membuat Repository di GitHub
 
+   1. Masuk ke akun GitHub, lalu klik ikon + di pojok kanan atas. Pilih menu New Repository.
+
+      <img width="281" height="152" alt="Klik Ikon + dan New Repository" src="https://github.com/user-attachments/assets/c376694d-a683-48c3-bbcf-400d672cdbbf" />
+
+   2. Beri nama repository, misalnya “tugas-proyek-web-pertama”.
+
+      <img width="970" height="211" alt="Membuat Nama Repository" src="https://github.com/user-attachments/assets/cf6a6237-b74b-4f17-bc3a-a206d348bfe4" />
+
+   3. Biarkan opsi “Add a README file” tetap tidak dicentang.
+
+      <img width="903" height="99" alt="Jangan Ceklis Add A README" src="https://github.com/user-attachments/assets/26be27c9-a020-4f5b-84d0-830794b2212f" />
+
+   4. Klik tombol Create Repository untuk menyelesaikan proses pembuatan.
+
+      <img width="1060" height="837" alt="Klik Buat Repository" src="https://github.com/user-attachments/assets/fcf4807b-9cf6-4197-9cdc-7b1f4382b9d1" />
+
 2. Menghubungkan Repository Lokal dengan GitHub
  
    1. Jalankan perintah berikut untuk menambahkan repository GitHub sebagai remote. Salin link repository GitHub.

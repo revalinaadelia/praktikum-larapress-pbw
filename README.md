@@ -262,7 +262,7 @@
 
    <img width="1903" height="812" alt="Pull Request (PR)" src="https://github.com/user-attachments/assets/36a8b4af-f5a8-4b06-9fae-45fddb0f9493" />
 
-8.	Reviewer dan Merge Pull Request
+7.	Reviewer dan Merge Pull Request
 
   	Reviewer akan meninjau perubahan yang sudah dibuat. Jika sudah disetujui, klik Merge Pull Request. Untuk memastikan hasil perubahan, dapat melihat isi file di tab Files changing pada GitHub.
 
@@ -272,12 +272,12 @@
 
    <img width="1901" height="606" alt="Hasil Perubahan" src="https://github.com/user-attachments/assets/10ef5b18-13eb-4c15-ae20-f5786034305a" />
 
-10.	Sinkronisasi ulang Repositori Lokal
+8.	Sinkronisasi ulang Repositori Lokal
 
-  	   Setelah pull request berhasil di-merge, sinkronkan kembali branch utama (main) di laptop lokal agar selalu sesuai dengan repositori GitHub.
+   Setelah pull request berhasil di-merge, sinkronkan kembali branch utama (main) di laptop lokal agar selalu sesuai dengan repositori GitHub.
 
-      git checkout main
+   git checkout main
 
-      git pull origin main
+   git pull origin main
 
-      <img width="832" height="384" alt="Sinkronisasi Ulang setelah Merge" src="https://github.com/user-attachments/assets/0c404d2c-8cef-4bac-a0a0-2403562053f6" />
+  <img width="832" height="384" alt="Sinkronisasi Ulang setelah Merge" src="https://github.com/user-attachments/assets/0c404d2c-8cef-4bac-a0a0-2403562053f6" />

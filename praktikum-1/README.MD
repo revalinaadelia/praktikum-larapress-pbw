@@ -240,7 +240,7 @@ b.	Perulangan `foreach` digunakan untuk menampilkan setiap baris data. Data ters
 
 3. Menghubungkan repositori lokal ke GitHub dengan perintah berikut ini. Baris pertama menambahkan alamat repositori GitHub sebagai _remote_ dengan nama `origin`. Baris kedua mengganti nama cabang utama menjadi `main`.
 
-`git remote add origin https://github.com/revalinaadelia/praktikum-php-dasar.git`
+`git remote add origin https://github.com/revalinaadelia/tugas-proyek-web-pertama.git`
 
 `git branch -M main`
 
@@ -251,5 +251,3 @@ b.	Perulangan `foreach` digunakan untuk menampilkan setiap baris data. Data ters
 `git commit -m "feat: Aplikasi pendaftaran event selesai"` -> menyimpan perubahan dengan pesan tertentu.
 
 `git push -u origin main` -> mengunggah kode ke repositori GitHub di cabang `main`.
-
-<img width="1010" height="661" alt="Menghubungkan Lokal ke GitHub" src="https://github.com/user-attachments/assets/9bd9c0ee-5ae2-4470-967f-dd4fab67cb7a" />

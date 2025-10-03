@@ -102,19 +102,20 @@ Aplikasi ini dapat diakses melalui browser: `http://127.0.0.1:8000`
 # 📁 Struktur File yang Dimodifikasi
 
 LaraPress/
+
 ├── routes/
 
-│   └── web.php         # Definisi route aplikasi
+│ └── web.php         # Definisi route aplikasi
 
 └── resources/
 
-    └── views/
+  └── views/
     
-        ├── welcome.blade.php   # Halaman utama
+   ├── welcome.blade.php   # Halaman utama
         
-        ├── about.blade.php     # Halaman Tentang Kami
+   ├── about.blade.php     # Halaman Tentang Kami
         
-        └── contact.blade.php   # Halaman Kontak
+   └── kontak.blade.php   # Halaman Kontak
 
 ## File yang Dibuat/Dimodifikasi:
 
@@ -140,7 +141,7 @@ LaraPress/
 
 - Menambahkan route baru `/about` yang mengarah ke view `about.blade.php`.
 
-- Menambahkan route baru `/contact` yang mengarah ke view `contact.blade.php`.
+- Menambahkan route baru `/kontak` yang mengarah ke view `kontak.blade.php`.
 
 ---
 

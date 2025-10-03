@@ -43,7 +43,7 @@ Laravel dikenal sebagai salah satu framework PHP modern yang mendukung pengemban
      
 ## 2. Halaman Tentang Kami (`/tentang-kami`)
 
-   - Route: `/about`.
+   - Route: `/tentang-kami`.
      
    - Menampilkan informasi tentang LaraPress.
      
@@ -101,21 +101,7 @@ Aplikasi ini dapat diakses melalui browser: `http://127.0.0.1:8000`
 
 # 📁 Struktur File yang Dimodifikasi
 
-LaraPress/
-
-├── routes/
-
-│ └── web.php         # Definisi route aplikasi
-
-└── resources/
-
-  └── views/
-    
-   ├── welcome.blade.php   # Halaman utama
-        
-   ├── about.blade.php     # Halaman Tentang Kami
-        
-   └── kontak.blade.php   # Halaman Kontak
+<img width="439" height="203" alt="Struktur File LaraPress" src="https://github.com/user-attachments/assets/ea3c4e45-7f8c-4dab-a227-4252ec61faab" />
 
 ## File yang Dibuat/Dimodifikasi:
 
@@ -139,7 +125,7 @@ LaraPress/
 
 ### 4. `routes/web.php`
 
-- Menambahkan route baru `/about` yang mengarah ke view `about.blade.php`.
+- Menambahkan route baru `/tentang-kami` yang mengarah ke view `about.blade.php`.
 
 - Menambahkan route baru `/kontak` yang mengarah ke view `kontak.blade.php`.
 

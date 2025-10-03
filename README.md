@@ -25,9 +25,11 @@ Proyek ini dibuat sebagai bagian dari pembelajaran Laravel framework. LaraPress 
 
    - Mengubah tampilan default Laravel menjadi halaman sederhana.
      
-   - Menampilkan judul "Selamat Datang di LaraPress".
+   - Menampilkan judul "Selamat Datang di Blog LaraPress".
      
    - Struktur HTML yang bersih dan minimal.
+
+   <img width="1917" height="1078" alt="Tampilan Utama LaraPress" src="https://github.com/user-attachments/assets/ea30db62-9012-4b2f-9cad-7e85f08784c8" />
      
 3. Halaman Tentang Kami
 
@@ -36,12 +38,16 @@ Proyek ini dibuat sebagai bagian dari pembelajaran Laravel framework. LaraPress 
    - Menampilkan informasi tentang LaraPress.
      
    - Menjelaskan tujuan proyek sebagai pembelajaran Laravel 12.
-     
+
+   <img width="1919" height="1075" alt="Tentang LaraPress" src="https://github.com/user-attachments/assets/b8059eeb-aab6-422e-8c21-3ab20d7c6149" />
+
 5. Halaman Kontak
 
-   - Route: `/contact`.
+   - Route: `/kontak`.
   
    - Menampilkan informasi kontak pengembang.
+
+   <img width="1918" height="1076" alt="Kontak LaraPress" src="https://github.com/user-attachments/assets/ff8d63de-5846-4e5a-a00d-d8e77a2355fb" />
 
 ---
 
@@ -49,25 +55,25 @@ Proyek ini dibuat sebagai bagian dari pembelajaran Laravel framework. LaraPress 
 
 ## File yang Dibuat/Dimodifikasi:
 
-### 1. resources/views/welcome.blade.php
+### 1. `resources/views/welcome.blade.php`
 
 - Mengubah tampilan default Laravel yang kompleks menjadi struktur HTML sederhana.
 
 - Menampilkan pesan sambutan untuk pengunjung blog.
 
-### 2. resources/views/about.blade.php (BARU)
+### 2. `resources/views/about.blade.php` (BARU)
 
 - File view baru untuk halaman "Tentang Kami".
 
 - Berisi informasi tentang LaraPress sebagai proyek pembelajaran.
 
-### 3. resources/view/contact.blade.php (BARU)
+### 3. `resources/view/contact.blade.php` (BARU)
 
-- File view baru untuk halaman "Contact".
+- File view baru untuk halaman "Kontak".
 
 - Berisi informasi tentang kontak pengembang.
 
-### 4. routes/web.php
+### 4. `routes/web.php`
 
 - Menambahkan route baru `/about` yang mengarah ke view `about.blade.php`.
 
@@ -81,26 +87,85 @@ Proyek ini dibuat sebagai bagian dari pembelajaran Laravel framework. LaraPress 
 
 Mengubah file `resources/views/welcome.blade.php` dari tampilan default Laravel (266 baris) menjadi HTML sederhana:
 
-<img width="616" height="317" alt="resources views welcome blade php" src="https://github.com/user-attachments/assets/c61e50aa-11f4-4332-ba78-52ba52c425a2" />
+``` resources/views/welcome.blade.php
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selamat Datang di LaraPress</title>
+</head>
+<body>
+    <h1>Selamat Datang di Blog LaraPress</h1>
+    <p>Ini adalah halaman utama dari aplikasi blog kita.</p>
+    <a href="/tentang-kami">Lihat Halaman Tentang Kami</a>
+    <br>
+    <a href="/kontak">Lihat Halaman Kontak</a>
+</body>
+</html>
+
+```
 
 ### Step 2: Membuat Route Baru
 
 Menambahkan route baru di `routes/web.php` :
 
-<img width="721" height="198" alt="routes web php" src="https://github.com/user-attachments/assets/cb244947-9e3c-4669-acb2-8cecc7b3427b" />
+``` routes/web.php
+Route::get('/tentang-kami', function () {
+    return view('about'); // Kita akan menampilkan view bernama 'about'
+});
+
+Route::get('/kontak', function () {
+    return view('kontak'); // Kita akan menampilkan view bernama 'kontak'
+});
+
+```
 
 ### Step 3: Membuat View About
 
 Membuat file baru `resources/views/about.blade.php` :
 
-<img width="1175" height="318" alt="resources views about blade php" src="https://github.com/user-attachments/assets/c97c15b6-ce80-4919-b4b1-db05a2e28159" />
+``` resources/views/about.blade.php
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tentang Kami - LaraPress</title>
+</head>
+<body>
+    <h1>Tentang LaraPress</h1>
+    <p>LaraPress adalah sebuah proyek blog sederhana yang dibuat untuk mempelajari dasar-dasar framework Laravel 12.</p>
+    <a href="/kontak">Lihat Halaman Kontak</a>
+    <br>
+    <a href="/">Kembali ke Halaman Utama</a>
+</body>
+</html>
 
-### Step 4: Membuat View Contact
+```
+
+### Step 4: Membuat View Kontak
 
 Membuat file baru `resources/views/contact.blade.php` :
 
-<img width="592" height="466" alt="resources viewscontact blade php" src="https://github.com/user-attachments/assets/f37636c4-5cf4-4054-b636-32ef1884eb35" />
+``` resources/views/contact.blade.php
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>Kontak Kami - LaraPress</title>
+</head>
+
+<body>
+    <h1>Kontak LaraPress</h1>
+    <p>Nama : Revalina Adelia</p>
+    <p>NPM  : 4523210091</p>
+    <p>Mata Kuliah : Prak. Pemrograman Berbasis Web (A)</p>
+    <p>Email : revalina4523091@univpancasila.ac.id</p>
+    <a href="/tentang-kami">Lihat Halaman Tentang Kami</a>
+    <br>
+    <a href="/">Kembali ke Halaman Utama</a>
+</body>
+
+</html>
+
+```
 ---
 
 ## 🌐 Endpoint yang Tersedia
@@ -124,17 +189,3 @@ Membuat file baru `resources/views/contact.blade.php` :
 - Frontend: Blade Template Engine, HTML, CSS
 
 - Build Tool: None
-
-## 📸 Dokumentasi
-
-### Halaman Utama 
-
-
-
-
-
-
-
-
-
-

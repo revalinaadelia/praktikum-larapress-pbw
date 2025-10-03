@@ -103,11 +103,17 @@ Aplikasi ini dapat diakses melalui browser: `http://127.0.0.1:8000`
 
 LaraPress/
 ├── routes/
+
 │   └── web.php         # Definisi route aplikasi
+
 └── resources/
+
     └── views/
+    
         ├── welcome.blade.php   # Halaman utama
+        
         ├── about.blade.php     # Halaman Tentang Kami
+        
         └── contact.blade.php   # Halaman Kontak
 
 ## File yang Dibuat/Dimodifikasi:

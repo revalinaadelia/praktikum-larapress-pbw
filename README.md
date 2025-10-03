@@ -105,6 +105,11 @@ Membuat file baru `resources/views/contact.blade.php` :
 
 ## 🌐 Endpoint yang Tersedia
 
+| Route      | Method | Deskripsi                              |
+|------------|--------|----------------------------------------|
+| `/`        | GET    | Halaman utama LaraPress                |
+| `/about`   | GET    | Halaman tentang LaraPress              |
+| `/contact` | GET    | Halaman tentang kontak pengembang      |
 
 ---
 

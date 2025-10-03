@@ -1,61 +1,135 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# PRAKTIKUM 3: LARAPRESS - APLIKASI BLOG SEDERHANA
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 📃 Identitas Diri
 
-## About Laravel
+- **Nama**             : Revalina Adelia
+- **NPM**              : 4523210091
+- **Mata Kuliah**      : Pemrograman Berbasis Web (A)
+- **Dosen Pengampu**   : Adi Wahyu Pribadi, S.Si., M.Kom.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+LaraPress adalah aplikasi blog sederhana yang dibangun menggunakan Laravel 12 untuk tujuan pembelajaran dan pengembangan keterampilan web development.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/05fa5a19-7d12-4fb4-b89c-8525f490af44" />
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+# 📋 Tentang Proyek
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Proyek ini dibuat sebagai bagian dari pembelajaran Laravel framework. LaraPress mendemonstrasikan konsep-konsep dasar Laravel seperti routing, views, dan struktur MVC.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# 🚀 Fitur yang Sudah Diimplementasikan
 
-## Laravel Sponsors
+1. Halaman Utama (Welcome Page)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+   - Mengubah tampilan default Laravel menjadi halaman sederhana.
+     
+   - Menampilkan judul "Selamat Datang di LaraPress".
+     
+   - Struktur HTML yang bersih dan minimal.
+     
+3. Halaman Tentang Kami
 
-### Premium Partners
+   - Route: `/about`.
+     
+   - Menampilkan informasi tentang LaraPress.
+     
+   - Menjelaskan tujuan proyek sebagai pembelajaran Laravel 12.
+     
+5. Halaman Kontak
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+   - Route: `/contact`.
+  
+   - Menampilkan informasi kontak pengembang.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+📁 Struktur File yang Dimodifikasi
 
-## Code of Conduct
+## File yang Dibuat/Dimodifikasi:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 1. resources/views/welcome.blade.php
 
-## Security Vulnerabilities
+- Mengubah tampilan default Laravel yang kompleks menjadi struktur HTML sederhana.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Menampilkan pesan sambutan untuk pengunjung blog.
 
-## License
+### 2. resources/views/about.blade.php (BARU)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- File view baru untuk halaman "Tentang Kami".
+
+- Berisi informasi tentang LaraPress sebagai proyek pembelajaran.
+
+### 3. resources/view/contact.blade.php (BARU)
+
+- File view baru untuk halaman "Contact".
+
+- Berisi informasi tentang kontak pengembang.
+
+### 4. routes/web.php
+
+- Menambahkan route baru `/about` yang mengarah ke view `about.blade.php`.
+
+- Menambahkan route baru `/contact` yang mengarah ke view `contact.blade.php`.
+
+---
+
+## 🛠️ Langkah-Langkah Implementasi
+
+### Step 1: Modifikasi Halaman Welcome
+
+Mengubah file `resources/views/welcome.blade.php` dari tampilan default Laravel (266 baris) menjadi HTML sederhana:
+
+<img width="616" height="317" alt="resources views welcome blade php" src="https://github.com/user-attachments/assets/c61e50aa-11f4-4332-ba78-52ba52c425a2" />
+
+### Step 2: Membuat Route Baru
+
+Menambahkan route baru di `routes/web.php` :
+
+<img width="721" height="198" alt="routes web php" src="https://github.com/user-attachments/assets/cb244947-9e3c-4669-acb2-8cecc7b3427b" />
+
+### Step 3: Membuat View About
+
+Membuat file baru `resources/views/about.blade.php` :
+
+<img width="1175" height="318" alt="resources views about blade php" src="https://github.com/user-attachments/assets/c97c15b6-ce80-4919-b4b1-db05a2e28159" />
+
+### Step 4: Membuat View Contact
+
+Membuat file baru `resources/views/contact.blade.php` :
+
+<img width="592" height="466" alt="resources viewscontact blade php" src="https://github.com/user-attachments/assets/f37636c4-5cf4-4054-b636-32ef1884eb35" />
+
+---
+
+## 🌐 Endpoint yang Tersedia
+
+
+---
+
+## 💻 Teknologi yang Digunakan
+
+- Framework: Laravel 12
+
+- PHP Version: 8.x
+
+- Database: MySQL
+
+- Frontend: Blade Template Engine, HTML, CSS
+
+- Build Tool: None
+
+## 📸 Dokumentasi
+
+### Halaman Utama 
+
+
+
+
+
+
+
+
+
+

@@ -73,7 +73,7 @@ Laravel dikenal sebagai salah satu framework PHP modern yang mendukung pengemban
 
 - **Composer** sudah tersedia pada sistem operasi.
 
-- **PHP** minimal versi 8.x.
+- **PHP** minimal versi 8.2.12
 
 - **Editor:** VS Code.
 
@@ -279,7 +279,7 @@ Membuat file baru `resources/views/kontak.blade.php` :
 
 - **Framework** : Laravel 12
 
-- **PHP Version** : 8.x
+- **PHP Version** : 8.2.12
 
 - **Database** : MySQL
 

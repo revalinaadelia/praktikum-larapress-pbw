@@ -92,6 +92,7 @@ Perintah ini akan membuat folder **LaraPress** berisi instalasi Laravel terbaru.
 Masuk ke direktori proyek, lalu jalankan:
 
 `cd LaraPress`
+
 `phhp artisan serve`
 
 Aplikasi ini dapat diakses melalui browser: `http://127.0.0.1:8000`
@@ -137,9 +138,9 @@ LaraPress/
 
 ---
 
-## 🛠️ Langkah-Langkah Implementasi
+# 🛠️ Langkah-Langkah Implementasi
 
-### Step 1: Modifikasi Halaman Welcome
+## Step 1: Modifikasi Halaman Welcome
 
 Mengubah file `resources/views/welcome.blade.php` dari tampilan default Laravel (266 baris) menjadi HTML sederhana:
 
@@ -166,7 +167,7 @@ Mengubah file `resources/views/welcome.blade.php` dari tampilan default Laravel 
 
 - Terdapat hyperlink menuju halaman **Tentang Kami** dan **Kontak**.
   
-### Step 2: Membuat Route Baru
+## Step 2: Membuat Route Baru
 
 Menambahkan route baru di `routes/web.php` :
 
@@ -197,7 +198,7 @@ Route::get('/kontak', function () {
 
 - Pada proyek ini terdapat 3 rute: `/` (halaman utama), `/tentang-kami`, dan `/kontak`.
   
-### Step 3: Membuat View About
+## Step 3: Membuat View About
 
 Membuat file baru `resources/views/about.blade.php` :
 
@@ -224,7 +225,7 @@ Membuat file baru `resources/views/about.blade.php` :
 
 - Disertai tautan navigasi kembali ke **Home** atau menuju **Halaman Kontak**.
   
-### Step 4: Membuat View Kontak
+## Step 4: Membuat View Kontak
 
 Membuat file baru `resources/views/kontak.blade.php` :
 
@@ -259,7 +260,7 @@ Membuat file baru `resources/views/kontak.blade.php` :
 
 ---
 
-## 🔄 Alur Kerja
+# 🔄 Alur Kerja
 
 1. Pengguna mengakses URL tertentu melalui browser.
    
@@ -271,7 +272,7 @@ Membuat file baru `resources/views/kontak.blade.php` :
    
 ---
 
-## 🌐 Endpoint yang Tersedia
+# 🌐 Endpoint yang Tersedia
 
 | Route             | Method | Deskripsi                              |
 |-------------------|--------|----------------------------------------|
@@ -281,7 +282,7 @@ Membuat file baru `resources/views/kontak.blade.php` :
 
 ---
 
-## 💻 Teknologi yang Digunakan
+# 💻 Teknologi yang Digunakan
 
 - **Framework** : Laravel 12
 
